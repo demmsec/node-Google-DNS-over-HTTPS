@@ -1,0 +1,15 @@
+{
+  "name": "node-google-dns-over-https",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DemmSec",
+  "license": "ISC"
+  "dependencies": {
+    "dns2": "1.3.0",
+    "request": "2.81.0"
+  }
+}
