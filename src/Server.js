@@ -10,10 +10,9 @@ class Server {
     }
 
     static onRequest(req, cb) {
-        Logger.info(`Got a request for ${url}`);
-
         const res = new dns.Packet(req);
         const { name, type } = req.questions[0];
+        Logger.info(`Got a request for ${name}`);
         Resolver.resolve(name, type, (body) => {
             if (!body) return;
             res.header.qr = 1;
